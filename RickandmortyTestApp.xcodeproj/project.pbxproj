@@ -8,24 +8,40 @@
 
 /* Begin PBXBuildFile section */
 		CEDF21C82DC12AA200C85581 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF21C72DC12AA200C85581 /* AppDelegate.swift */; };
-		CEDF21CA2DC12AA200C85581 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF21C92DC12AA200C85581 /* SceneDelegate.swift */; };
-		CEDF21CC2DC12AA200C85581 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF21CB2DC12AA200C85581 /* ViewController.swift */; };
-		CEDF21CF2DC12AA200C85581 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEDF21CD2DC12AA200C85581 /* Main.storyboard */; };
 		CEDF21D22DC12AA200C85581 /* RickandmortyTestApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEDF21D02DC12AA200C85581 /* RickandmortyTestApp.xcdatamodeld */; };
 		CEDF21D42DC12AA500C85581 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEDF21D32DC12AA500C85581 /* Assets.xcassets */; };
 		CEDF21D72DC12AA500C85581 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEDF21D52DC12AA500C85581 /* LaunchScreen.storyboard */; };
+		CEDF21E22DC12E8A00C85581 /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF21E12DC12E8A00C85581 /* TableController.swift */; };
+		CEDF21E42DC12EC700C85581 /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF21E32DC12EC700C85581 /* TableViewModel.swift */; };
+		CEDF21E62DC130B800C85581 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF21E52DC130B800C85581 /* TableViewCell.swift */; };
+		CEDF21EA2DC1393A00C85581 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF21E92DC1393A00C85581 /* BaseController.swift */; };
+		CEDF21ED2DC13AC500C85581 /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF21EC2DC13AC500C85581 /* TitleLabel.swift */; };
+		CEDF21F02DC13B8000C85581 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF21EF2DC13B8000C85581 /* Colors.swift */; };
+		CEDF21F32DC13BCD00C85581 /* Collor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF21F22DC13BCD00C85581 /* Collor+Extension.swift */; };
+		CEDF21F52DC13CA400C85581 /* Titles.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF21F42DC13CA400C85581 /* Titles.swift */; };
+		CEDF21F72DC1511600C85581 /* TableManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF21F62DC1511600C85581 /* TableManager.swift */; };
+		CEDF21F92DC151FA00C85581 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF21F82DC151FA00C85581 /* Block.swift */; };
+		CEDF21FC2DC152A600C85581 /* Morty.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF21FB2DC152A600C85581 /* Morty.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CEDF21C42DC12AA200C85581 /* RickandmortyTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickandmortyTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDF21C72DC12AA200C85581 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CEDF21C92DC12AA200C85581 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CEDF21CB2DC12AA200C85581 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CEDF21CE2DC12AA200C85581 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEDF21D12DC12AA200C85581 /* RickandmortyTestApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RickandmortyTestApp.xcdatamodel; sourceTree = "<group>"; };
 		CEDF21D32DC12AA500C85581 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEDF21D62DC12AA500C85581 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEDF21D82DC12AA500C85581 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEDF21E12DC12E8A00C85581 /* TableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableController.swift; sourceTree = "<group>"; };
+		CEDF21E32DC12EC700C85581 /* TableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewModel.swift; sourceTree = "<group>"; };
+		CEDF21E52DC130B800C85581 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		CEDF21E92DC1393A00C85581 /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		CEDF21EC2DC13AC500C85581 /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
+		CEDF21EF2DC13B8000C85581 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		CEDF21F22DC13BCD00C85581 /* Collor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collor+Extension.swift"; sourceTree = "<group>"; };
+		CEDF21F42DC13CA400C85581 /* Titles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Titles.swift; sourceTree = "<group>"; };
+		CEDF21F62DC1511600C85581 /* TableManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableManager.swift; sourceTree = "<group>"; };
+		CEDF21F82DC151FA00C85581 /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
+		CEDF21FB2DC152A600C85581 /* Morty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Morty.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +74,96 @@
 		CEDF21C62DC12AA200C85581 /* RickandmortyTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				CEDF21F12DC13BB500C85581 /* Extensions */,
+				CEDF21EE2DC13B5B00C85581 /* Models */,
+				CEDF21EB2DC13AA300C85581 /* CustomView */,
+				CEDF21E72DC138FF00C85581 /* Controllers */,
 				CEDF21C72DC12AA200C85581 /* AppDelegate.swift */,
-				CEDF21C92DC12AA200C85581 /* SceneDelegate.swift */,
-				CEDF21CB2DC12AA200C85581 /* ViewController.swift */,
-				CEDF21CD2DC12AA200C85581 /* Main.storyboard */,
 				CEDF21D32DC12AA500C85581 /* Assets.xcassets */,
 				CEDF21D52DC12AA500C85581 /* LaunchScreen.storyboard */,
 				CEDF21D82DC12AA500C85581 /* Info.plist */,
 				CEDF21D02DC12AA200C85581 /* RickandmortyTestApp.xcdatamodeld */,
 			);
 			path = RickandmortyTestApp;
+			sourceTree = "<group>";
+		};
+		CEDF21DE2DC12E0400C85581 /* TableController */ = {
+			isa = PBXGroup;
+			children = (
+				CEDF21FA2DC1526100C85581 /* Model */,
+				CEDF21E02DC12E4700C85581 /* ViewModel */,
+				CEDF21DF2DC12E3200C85581 /* View */,
+			);
+			path = TableController;
+			sourceTree = "<group>";
+		};
+		CEDF21DF2DC12E3200C85581 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEDF21E12DC12E8A00C85581 /* TableController.swift */,
+				CEDF21E52DC130B800C85581 /* TableViewCell.swift */,
+				CEDF21F62DC1511600C85581 /* TableManager.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEDF21E02DC12E4700C85581 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CEDF21E32DC12EC700C85581 /* TableViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CEDF21E72DC138FF00C85581 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CEDF21E82DC1391E00C85581 /* Base */,
+				CEDF21DE2DC12E0400C85581 /* TableController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CEDF21E82DC1391E00C85581 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				CEDF21E92DC1393A00C85581 /* BaseController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		CEDF21EB2DC13AA300C85581 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				CEDF21EC2DC13AC500C85581 /* TitleLabel.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		CEDF21EE2DC13B5B00C85581 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CEDF21EF2DC13B8000C85581 /* Colors.swift */,
+				CEDF21F42DC13CA400C85581 /* Titles.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CEDF21F12DC13BB500C85581 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CEDF21F22DC13BCD00C85581 /* Collor+Extension.swift */,
+				CEDF21F82DC151FA00C85581 /* Block.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CEDF21FA2DC1526100C85581 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEDF21FB2DC152A600C85581 /* Morty.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +226,6 @@
 			files = (
 				CEDF21D72DC12AA500C85581 /* LaunchScreen.storyboard in Resources */,
 				CEDF21D42DC12AA500C85581 /* Assets.xcassets in Resources */,
-				CEDF21CF2DC12AA200C85581 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,24 +236,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEDF21E62DC130B800C85581 /* TableViewCell.swift in Sources */,
+				CEDF21F02DC13B8000C85581 /* Colors.swift in Sources */,
+				CEDF21E22DC12E8A00C85581 /* TableController.swift in Sources */,
 				CEDF21D22DC12AA200C85581 /* RickandmortyTestApp.xcdatamodeld in Sources */,
-				CEDF21CC2DC12AA200C85581 /* ViewController.swift in Sources */,
+				CEDF21F52DC13CA400C85581 /* Titles.swift in Sources */,
+				CEDF21F32DC13BCD00C85581 /* Collor+Extension.swift in Sources */,
 				CEDF21C82DC12AA200C85581 /* AppDelegate.swift in Sources */,
-				CEDF21CA2DC12AA200C85581 /* SceneDelegate.swift in Sources */,
+				CEDF21ED2DC13AC500C85581 /* TitleLabel.swift in Sources */,
+				CEDF21FC2DC152A600C85581 /* Morty.swift in Sources */,
+				CEDF21F72DC1511600C85581 /* TableManager.swift in Sources */,
+				CEDF21F92DC151FA00C85581 /* Block.swift in Sources */,
+				CEDF21EA2DC1393A00C85581 /* BaseController.swift in Sources */,
+				CEDF21E42DC12EC700C85581 /* TableViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CEDF21CD2DC12AA200C85581 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CEDF21CE2DC12AA200C85581 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CEDF21D52DC12AA500C85581 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -222,7 +318,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -279,7 +375,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -301,9 +397,9 @@
 				INFOPLIST_FILE = RickandmortyTestApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,6 +407,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Efimenko.RickandmortyTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -329,9 +429,9 @@
 				INFOPLIST_FILE = RickandmortyTestApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +439,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Efimenko.RickandmortyTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
