@@ -11,8 +11,10 @@ final class TableViewCell: UITableViewCell {
     
     let iconImageView = UIImageView()
     let titleLabel = UILabel()
+    private var imageService: ImageService
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        imageService = DIContainer.default.imageService
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupViews()
     }
@@ -50,7 +52,15 @@ final class TableViewCell: UITableViewCell {
     }
     
     func configure(model: Morty) {
-        titleLabel.text = model.title
-        iconImageView.image = UIImage(systemName: model.image)
+        titleLabel.text = model.name
+        iconImageView.image = UIImage()
+        
+        guard let strImage = model.image,
+              let url = URL(string: strImage) else { return }
+        
+        imageService.downloadImage(url: url) { [weak self] image in
+            guard let self = self else { return }
+            self.iconImageView.image = image
+        }
     }
 }

@@ -32,6 +32,12 @@
 		CEDF220F2DC221FA00C85581 /* DetailCoordinatorEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF220E2DC221FA00C85581 /* DetailCoordinatorEvent.swift */; };
 		CEDF22112DC2223A00C85581 /* DetailAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF22102DC2223A00C85581 /* DetailAssembly.swift */; };
 		CEDF22132DC2272400C85581 /* TableViewModelInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF22122DC2272400C85581 /* TableViewModelInterface.swift */; };
+		CEDF22162DC2336100C85581 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF22152DC2336100C85581 /* DIContainer.swift */; };
+		CEDF22182DC2372A00C85581 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF22172DC2372A00C85581 /* ImageService.swift */; };
+		CEDF221A2DC2377B00C85581 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF22192DC2377B00C85581 /* NetworkService.swift */; };
+		CEDF221C2DC239A500C85581 /* NetworkServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF221B2DC239A500C85581 /* NetworkServiceImplementation.swift */; };
+		CEDF221E2DC23D2D00C85581 /* ImageServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF221D2DC23D2D00C85581 /* ImageServiceImplementation.swift */; };
+		CEDF22212DC2549700C85581 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF22202DC2549700C85581 /* FileManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +68,12 @@
 		CEDF220E2DC221FA00C85581 /* DetailCoordinatorEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCoordinatorEvent.swift; sourceTree = "<group>"; };
 		CEDF22102DC2223A00C85581 /* DetailAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAssembly.swift; sourceTree = "<group>"; };
 		CEDF22122DC2272400C85581 /* TableViewModelInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewModelInterface.swift; sourceTree = "<group>"; };
+		CEDF22152DC2336100C85581 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		CEDF22172DC2372A00C85581 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		CEDF22192DC2377B00C85581 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		CEDF221B2DC239A500C85581 /* NetworkServiceImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceImplementation.swift; sourceTree = "<group>"; };
+		CEDF221D2DC23D2D00C85581 /* ImageServiceImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageServiceImplementation.swift; sourceTree = "<group>"; };
+		CEDF22202DC2549700C85581 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +106,7 @@
 		CEDF21C62DC12AA200C85581 /* RickandmortyTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				CEDF22142DC2334200C85581 /* Services */,
 				CEDF21FD2DC20D7600C85581 /* Coordinator */,
 				CEDF21F12DC13BB500C85581 /* Extensions */,
 				CEDF21EE2DC13B5B00C85581 /* Models */,
@@ -220,6 +233,27 @@
 			path = DetailCoordinator;
 			sourceTree = "<group>";
 		};
+		CEDF22142DC2334200C85581 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CEDF221F2DC2548000C85581 /* FileManager */,
+				CEDF22152DC2336100C85581 /* DIContainer.swift */,
+				CEDF22172DC2372A00C85581 /* ImageService.swift */,
+				CEDF22192DC2377B00C85581 /* NetworkService.swift */,
+				CEDF221B2DC239A500C85581 /* NetworkServiceImplementation.swift */,
+				CEDF221D2DC23D2D00C85581 /* ImageServiceImplementation.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CEDF221F2DC2548000C85581 /* FileManager */ = {
+			isa = PBXGroup;
+			children = (
+				CEDF22202DC2549700C85581 /* FileManager.swift */,
+			);
+			path = FileManager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -294,12 +328,14 @@
 				CEDF22052DC20ECB00C85581 /* TableCoordinatorEvent.swift in Sources */,
 				CEDF21E62DC130B800C85581 /* TableViewCell.swift in Sources */,
 				CEDF21F02DC13B8000C85581 /* Colors.swift in Sources */,
+				CEDF22162DC2336100C85581 /* DIContainer.swift in Sources */,
 				CEDF22012DC20E2000C85581 /* TableCoordinatorInterface.swift in Sources */,
 				CEDF220B2DC2214000C85581 /* DetailCoordinator.swift in Sources */,
 				CEDF22072DC2115000C85581 /* TableAssembly.swift in Sources */,
 				CEDF21E22DC12E8A00C85581 /* TableController.swift in Sources */,
 				CEDF21D22DC12AA200C85581 /* RickandmortyTestApp.xcdatamodeld in Sources */,
 				CEDF21F52DC13CA400C85581 /* Titles.swift in Sources */,
+				CEDF22212DC2549700C85581 /* FileManager.swift in Sources */,
 				CEDF21F32DC13BCD00C85581 /* Collor+Extension.swift in Sources */,
 				CEDF220D2DC221B500C85581 /* DetailCoordinatorInterface.swift in Sources */,
 				CEDF22132DC2272400C85581 /* TableViewModelInterface.swift in Sources */,
@@ -307,11 +343,15 @@
 				CEDF21ED2DC13AC500C85581 /* TitleLabel.swift in Sources */,
 				CEDF220F2DC221FA00C85581 /* DetailCoordinatorEvent.swift in Sources */,
 				CEDF21FC2DC152A600C85581 /* Morty.swift in Sources */,
+				CEDF221E2DC23D2D00C85581 /* ImageServiceImplementation.swift in Sources */,
 				CEDF22032DC20E7700C85581 /* CoordinatorInterface.swift in Sources */,
 				CEDF21FF2DC20DB200C85581 /* TableCoordinator.swift in Sources */,
 				CEDF21F72DC1511600C85581 /* TableManager.swift in Sources */,
 				CEDF21F92DC151FA00C85581 /* Block.swift in Sources */,
 				CEDF21EA2DC1393A00C85581 /* BaseController.swift in Sources */,
+				CEDF22182DC2372A00C85581 /* ImageService.swift in Sources */,
+				CEDF221C2DC239A500C85581 /* NetworkServiceImplementation.swift in Sources */,
+				CEDF221A2DC2377B00C85581 /* NetworkService.swift in Sources */,
 				CEDF21E42DC12EC700C85581 /* TableViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

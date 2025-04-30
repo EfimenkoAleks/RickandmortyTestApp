@@ -9,33 +9,34 @@ import Foundation
 
 final class TableViewModel: TableViewModelInterface {
  
+    private var apiService: NetworkService?
     weak var coordinator: TableCoordinatorInterface?
     var models: [Morty] = []
-    var numberOfModel: Int {
-        return models.count
-    }
+    var nextPath: String?
     var reloadTableView: Block<()>?
     
-    init(coordinator: TableCoordinatorInterface) {
+    init(coordinator: TableCoordinatorInterface,
+         apiService: NetworkService = DIContainer.default.networkService) {
         self.coordinator = coordinator
+        self.apiService = apiService
     }
     
     func model(at index: Int) -> Morty {
         return models[index]
     }
     
-    func fetchModels() {
-        // fetch model
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) { [weak self] in
+    func fetchModels(load: NetworkLoadEvent) {
+        apiService?.fetchCharacter(load: load) { [weak self] result in
             guard let self = self else { return }
-            self.models = [
-                Morty(image: "square.and.arrow.up.fill", title: "Morty1"),
-                Morty(image: "folder.fill", title: "Morty2"),
-                Morty(image: "trash.fill", title: "Morty3"),
-                Morty(image: "pencil.tip.crop.circle.badge.plus", title: "Morty4"),
-                Morty(image: "eraser.fill", title: "Morty5")
-            ]
-            self.reloadTableView?(())
+            
+            switch result {
+            case .success(let models):
+                self.models += models.results
+                self.nextPath = models.info?.next
+                self.reloadTableView?(())
+            case .failure(let error):
+                break
+            }
         }
     }
     
@@ -45,7 +46,8 @@ final class TableViewModel: TableViewModelInterface {
             let model = model(at: index)
             coordinator?.eventOccurred(with: .detail(model))
         case .loadMore:
-            break
+            guard let path = nextPath else { return }
+            fetchModels(load: .loadMore(path))
         }
     }
 }

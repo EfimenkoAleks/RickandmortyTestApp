@@ -38,7 +38,7 @@ final class TableController: BaseController {
             
             tableManager.reloadData(data: viewModel.models)
         }
-        viewModel.fetchModels()
+        viewModel.fetchModels(load: .first)
     }
 }
 
