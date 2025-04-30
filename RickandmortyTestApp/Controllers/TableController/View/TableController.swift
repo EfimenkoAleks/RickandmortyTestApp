@@ -9,13 +9,36 @@ import UIKit
 
 final class TableController: BaseController {
     
-    var tableView: UITableView?
+    var viewModel: TableViewModelInterface?
+    private var tableView: UITableView?
     private var tableManager: TableManager?
-    private var viewModel: TableViewModel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         configureUI()
+    }
+    
+    func setViewModel(_ vModel: TableViewModelInterface) {
+        self.viewModel = vModel
+       
+        guard let tableView = tableView,
+        let viewModel = viewModel else { return }
+        
+        tableManager = TableManager(tableView, data: viewModel.models)
+        tableManager?.eventHandler = { [weak self] event in
+            guard let self = self,
+            let viewModel = self.viewModel else { return }
+            
+            viewModel.getEvents(event)
+        }
+        viewModel.reloadTableView = { [weak self] _ in
+            guard let self = self,
+            let tableManager = self.tableManager else { return }
+            
+            tableManager.reloadData(data: viewModel.models)
+        }
+        viewModel.fetchModels()
     }
 }
 
@@ -24,8 +47,6 @@ final class TableController: BaseController {
     func configureUI() {
         setupTableView()
         createTitle(Titles.tableTitle.title)
-        createVM()
-        createManager()
     }
      
      func setupTableView() {
@@ -42,28 +63,5 @@ final class TableController: BaseController {
              tableView.rightAnchor.constraint(equalTo: view.rightAnchor),
              tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
          ])
-     }
-     
-     func createVM() {
-         viewModel = TableViewModel()
-     }
-     
-     func createManager() {
-         guard let tableView = tableView,
-         let viewModel = viewModel else { return }
-         
-         tableManager = TableManager(tableView, data: viewModel.models)
-         tableManager?.eventHandler = { [weak self] event in
-             guard let self = self,
-             let viewModel = self.viewModel else { return }
-             
-             viewModel.getEvents(event)
-         }
-         viewModel.reloadTableView = { [weak self] _ in
-             guard let self = self,
-             let tableManager = self.tableManager else { return }
-             
-             tableManager.reloadData(data: viewModel.models)
-         }
      }
 }

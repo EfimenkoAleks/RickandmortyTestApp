@@ -7,18 +7,17 @@
 
 import Foundation
 
-final class TableViewModel {
-    
+final class TableViewModel: TableViewModelInterface {
+ 
+    weak var coordinator: TableCoordinatorInterface?
     var models: [Morty] = []
     var numberOfModel: Int {
         return models.count
     }
-    
     var reloadTableView: Block<()>?
     
-    
-    init() {
-        fetchModels()
+    init(coordinator: TableCoordinatorInterface) {
+        self.coordinator = coordinator
     }
     
     func model(at index: Int) -> Morty {
@@ -44,6 +43,7 @@ final class TableViewModel {
         switch events {
         case .selected(let index):
             let model = model(at: index)
+            coordinator?.eventOccurred(with: .detail(model))
         case .loadMore:
             break
         }

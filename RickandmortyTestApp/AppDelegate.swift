@@ -12,14 +12,12 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
+    var coordinator: CoordinatorInterface?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        let rootVC = TableController()
-        let nav = UINavigationController(rootViewController: rootVC)
-        window?.rootViewController = nav
-        window?.makeKeyAndVisible()
+        coordinator = TableCoordinator(with: window)
         
         return true
     }
