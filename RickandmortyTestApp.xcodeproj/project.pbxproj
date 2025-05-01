@@ -42,6 +42,9 @@
 		CEDF22282DC2B35B00C85581 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF22272DC2B35B00C85581 /* DetailViewModel.swift */; };
 		CEDF222A2DC3599100C85581 /* DetailCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF22292DC3599100C85581 /* DetailCustomView.swift */; };
 		CEDF222C2DC36EB300C85581 /* DetailViewModelInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF222B2DC36EB300C85581 /* DetailViewModelInterface.swift */; };
+		CEDF222F2DC38C9400C85581 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF222E2DC38C9400C85581 /* CoreDataManager.swift */; };
+		CEDF22372DC39FBA00C85581 /* DataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF22362DC39FBA00C85581 /* DataFetcher.swift */; };
+		CEDF22392DC3A47200C85581 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF22382DC3A47200C85581 /* Connectivity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +85,9 @@
 		CEDF22272DC2B35B00C85581 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		CEDF22292DC3599100C85581 /* DetailCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCustomView.swift; sourceTree = "<group>"; };
 		CEDF222B2DC36EB300C85581 /* DetailViewModelInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModelInterface.swift; sourceTree = "<group>"; };
+		CEDF222E2DC38C9400C85581 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		CEDF22362DC39FBA00C85581 /* DataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetcher.swift; sourceTree = "<group>"; };
+		CEDF22382DC3A47200C85581 /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +196,7 @@
 			children = (
 				CEDF21EF2DC13B8000C85581 /* Colors.swift */,
 				CEDF21F42DC13CA400C85581 /* Titles.swift */,
+				CEDF22382DC3A47200C85581 /* Connectivity.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -246,12 +253,11 @@
 		CEDF22142DC2334200C85581 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				CEDF222D2DC38C7200C85581 /* CoreDataManager */,
 				CEDF221F2DC2548000C85581 /* FileManager */,
 				CEDF22152DC2336100C85581 /* DIContainer.swift */,
-				CEDF22172DC2372A00C85581 /* ImageService.swift */,
-				CEDF22192DC2377B00C85581 /* NetworkService.swift */,
-				CEDF221B2DC239A500C85581 /* NetworkServiceImplementation.swift */,
-				CEDF221D2DC23D2D00C85581 /* ImageServiceImplementation.swift */,
+				CEDF22342DC39E4C00C85581 /* NetworkService */,
+				CEDF22352DC39E7200C85581 /* ImageService */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -288,6 +294,33 @@
 				CEDF222B2DC36EB300C85581 /* DetailViewModelInterface.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CEDF222D2DC38C7200C85581 /* CoreDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				CEDF222E2DC38C9400C85581 /* CoreDataManager.swift */,
+			);
+			path = CoreDataManager;
+			sourceTree = "<group>";
+		};
+		CEDF22342DC39E4C00C85581 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				CEDF22192DC2377B00C85581 /* NetworkService.swift */,
+				CEDF221B2DC239A500C85581 /* NetworkServiceImplementation.swift */,
+				CEDF22362DC39FBA00C85581 /* DataFetcher.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		CEDF22352DC39E7200C85581 /* ImageService */ = {
+			isa = PBXGroup;
+			children = (
+				CEDF22172DC2372A00C85581 /* ImageService.swift */,
+				CEDF221D2DC23D2D00C85581 /* ImageServiceImplementation.swift */,
+			);
+			path = ImageService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,6 +397,7 @@
 				CEDF22052DC20ECB00C85581 /* TableCoordinatorEvent.swift in Sources */,
 				CEDF21E62DC130B800C85581 /* TableViewCell.swift in Sources */,
 				CEDF22242DC2B32200C85581 /* DetailControlller.swift in Sources */,
+				CEDF222F2DC38C9400C85581 /* CoreDataManager.swift in Sources */,
 				CEDF21F02DC13B8000C85581 /* Colors.swift in Sources */,
 				CEDF22162DC2336100C85581 /* DIContainer.swift in Sources */,
 				CEDF222C2DC36EB300C85581 /* DetailViewModelInterface.swift in Sources */,
@@ -374,10 +408,12 @@
 				CEDF21D22DC12AA200C85581 /* RickandmortyTestApp.xcdatamodeld in Sources */,
 				CEDF21F52DC13CA400C85581 /* Titles.swift in Sources */,
 				CEDF22212DC2549700C85581 /* FileManager.swift in Sources */,
+				CEDF22372DC39FBA00C85581 /* DataFetcher.swift in Sources */,
 				CEDF22282DC2B35B00C85581 /* DetailViewModel.swift in Sources */,
 				CEDF21F32DC13BCD00C85581 /* Collor+Extension.swift in Sources */,
 				CEDF220D2DC221B500C85581 /* DetailCoordinatorInterface.swift in Sources */,
 				CEDF22132DC2272400C85581 /* TableViewModelInterface.swift in Sources */,
+				CEDF22392DC3A47200C85581 /* Connectivity.swift in Sources */,
 				CEDF21C82DC12AA200C85581 /* AppDelegate.swift in Sources */,
 				CEDF21ED2DC13AC500C85581 /* TitleLabel.swift in Sources */,
 				CEDF220F2DC221FA00C85581 /* DetailCoordinatorEvent.swift in Sources */,

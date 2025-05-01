@@ -11,7 +11,7 @@ protocol TableViewModelInterface: AnyObject {
     var models: [Morty] {get}
     var coordinator: (TableCoordinatorInterface)? {get set}
     var reloadTableView: Block<()>? {get set}
-    func fetchModels(load: NetworkLoadEvent)
+    func fetchModels(load: Bool)
     func model(at index: Int) -> Morty
     func getEvents(_ events: ListEvent)
 }

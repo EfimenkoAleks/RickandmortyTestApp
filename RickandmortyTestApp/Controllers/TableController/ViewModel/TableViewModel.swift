@@ -9,35 +9,27 @@ import Foundation
 
 final class TableViewModel: TableViewModelInterface {
  
-    private var apiService: NetworkService?
+    private var dataService: DataFetcher?
     weak var coordinator: TableCoordinatorInterface?
     var models: [Morty] = []
-    var nextPath: String?
+    
     var reloadTableView: Block<()>?
     
-    init(coordinator: TableCoordinatorInterface,
-         apiService: NetworkService = DIContainer.default.networkService) {
+    init(coordinator: TableCoordinatorInterface) {
         self.coordinator = coordinator
-        self.apiService = apiService
+        self.dataService = DataFetcher()
     }
     
     func model(at index: Int) -> Morty {
         return models[index]
     }
     
-    func fetchModels(load: NetworkLoadEvent) {
-        apiService?.fetchCharacter(load: load) { [weak self] result in
+    func fetchModels(load: Bool) {
+        dataService?.fetchData(load: load, completion: { [weak self] result in
             guard let self = self else { return }
-            
-            switch result {
-            case .success(let models):
-                self.models += models.results
-                self.nextPath = models.info?.next
-                self.reloadTableView?(())
-            case .failure(let error):
-                break
-            }
-        }
+            self.models += result
+            self.reloadTableView?(())
+        })
     }
     
     func getEvents(_ events: ListEvent) {
@@ -46,8 +38,9 @@ final class TableViewModel: TableViewModelInterface {
             let model = model(at: index)
             coordinator?.eventOccurred(with: .detail(model))
         case .loadMore:
-            guard let path = nextPath else { return }
-            fetchModels(load: .loadMore(path))
+            if Connectivity.isConnectedToNetwork() {
+                fetchModels(load: true)
+            }
         }
     }
 }

@@ -247,54 +247,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "F7B67892-23B2-4FA8-9523-0C8D9417A696"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RickandmortyTestApp/Controllers/TableController/ViewModel/TableViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "fetchModels(load:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "F7B67892-23B2-4FA8-9523-0C8D9417A696 - 4b01b2f90875b06b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "RickandmortyTestApp.TableViewModel.fetchModels() -&gt; ()"
-                  moduleName = "RickandmortyTestApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/user/Desktop/RickandmortyTestApp/RickandmortyTestApp/Controllers/TableController/ViewModel/TableViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "27"
-                  endingLineNumber = "27"
-                  offsetFromSymbolStart = "34">
-               </Location>
-               <Location
-                  uuid = "F7B67892-23B2-4FA8-9523-0C8D9417A696 - 50c2f953d49b5851"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;RickandmortyTestApp.Morty&gt;, Swift.Error&gt;) -&gt; () in RickandmortyTestApp.TableViewModel.fetchModels() -&gt; ()"
-                  moduleName = "RickandmortyTestApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/user/Desktop/RickandmortyTestApp/RickandmortyTestApp/Controllers/TableController/ViewModel/TableViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "27"
-                  endingLineNumber = "27"
-                  offsetFromSymbolStart = "145">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "0B0FB2C8-E034-4FC9-BA78-F1ABA09D4405"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -805,22 +757,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "634CA551-929E-4CC6-B435-CA83392BB688"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RickandmortyTestApp/Controllers/TableController/ViewModel/TableViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "fetchModels(load:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "96647741-355F-4D00-BE0E-2A3AA8E9B233"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -917,54 +853,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "5ECC21E5-4472-4FA2-8E56-92C3D819E8E2"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RickandmortyTestApp/Controllers/TableController/ViewModel/TableViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "fetchModels(load:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "5ECC21E5-4472-4FA2-8E56-92C3D819E8E2 - e76184a2ceb25aab"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;RickandmortyTestApp.MortyModel, Swift.Error&gt;) -&gt; () in RickandmortyTestApp.TableViewModel.fetchModels(load: RickandmortyTestApp.NetworkLoadEvent) -&gt; ()"
-                  moduleName = "RickandmortyTestApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/user/Desktop/RickandmortyTestApp/RickandmortyTestApp/Controllers/TableController/ViewModel/TableViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "37"
-                  endingLineNumber = "37"
-                  offsetFromSymbolStart = "835">
-               </Location>
-               <Location
-                  uuid = "5ECC21E5-4472-4FA2-8E56-92C3D819E8E2 - e76184a2ceb25a8a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;RickandmortyTestApp.MortyModel, Swift.Error&gt;) -&gt; () in RickandmortyTestApp.TableViewModel.fetchModels(load: RickandmortyTestApp.NetworkLoadEvent) -&gt; ()"
-                  moduleName = "RickandmortyTestApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/user/Desktop/RickandmortyTestApp/RickandmortyTestApp/Controllers/TableController/ViewModel/TableViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "36"
-                  endingLineNumber = "36"
-                  offsetFromSymbolStart = "681">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "DE9AA467-5B42-4AEF-B7AA-ED1AF74D4E53"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -972,8 +860,8 @@
             filePath = "RickandmortyTestApp/Controllers/TableController/ViewModel/TableViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
             landmarkName = "getEvents(_:)"
             landmarkType = "7">
          </BreakpointContent>
