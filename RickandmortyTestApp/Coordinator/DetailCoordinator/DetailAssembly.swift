@@ -11,17 +11,18 @@ final class DetailAssembly {
 
     public struct DetailModule {
         let view: UIViewController
-    //    let viewModel:
+        let viewModel: DetailViewModelInterface
     }
    
     // MARK: - Module setup -
 
- //   func createModule(coordinator: TableCoordinatorInterface) -> DetailModule {
-//        let vModel = DetailViewModel(coordinator: coordinator)
-//        let vc =
-//
-        
-//        return DetailModule(view: vc, viewModel: vModel)
-//    }
+    func createModule(coordinator: DetailCoordinatorInterface, model: Morty) -> DetailModule {
+        let vModel = DetailViewModel(coordinator: coordinator)
+        vModel.model = model
+        let vc = DetailControlller()
+        vc.setViewModel(vModel)
+
+        return DetailModule(view: vc, viewModel: vModel)
+    }
 }
 

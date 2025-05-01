@@ -16,7 +16,8 @@ final class DetailCoordinator: DetailCoordinatorInterface {
     var handlerBback: Block<()>?
     
     func start(with model: Morty) {
-       
+        let module = DetailAssembly().createModule(coordinator: self, model: model)
+        navigationController?.pushViewController(module.view, animated: true)
     }
 }
 

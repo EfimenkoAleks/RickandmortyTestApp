@@ -38,6 +38,10 @@
 		CEDF221C2DC239A500C85581 /* NetworkServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF221B2DC239A500C85581 /* NetworkServiceImplementation.swift */; };
 		CEDF221E2DC23D2D00C85581 /* ImageServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF221D2DC23D2D00C85581 /* ImageServiceImplementation.swift */; };
 		CEDF22212DC2549700C85581 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF22202DC2549700C85581 /* FileManager.swift */; };
+		CEDF22242DC2B32200C85581 /* DetailControlller.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF22232DC2B32200C85581 /* DetailControlller.swift */; };
+		CEDF22282DC2B35B00C85581 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF22272DC2B35B00C85581 /* DetailViewModel.swift */; };
+		CEDF222A2DC3599100C85581 /* DetailCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF22292DC3599100C85581 /* DetailCustomView.swift */; };
+		CEDF222C2DC36EB300C85581 /* DetailViewModelInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDF222B2DC36EB300C85581 /* DetailViewModelInterface.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +78,10 @@
 		CEDF221B2DC239A500C85581 /* NetworkServiceImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceImplementation.swift; sourceTree = "<group>"; };
 		CEDF221D2DC23D2D00C85581 /* ImageServiceImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageServiceImplementation.swift; sourceTree = "<group>"; };
 		CEDF22202DC2549700C85581 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
+		CEDF22232DC2B32200C85581 /* DetailControlller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailControlller.swift; sourceTree = "<group>"; };
+		CEDF22272DC2B35B00C85581 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		CEDF22292DC3599100C85581 /* DetailCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCustomView.swift; sourceTree = "<group>"; };
+		CEDF222B2DC36EB300C85581 /* DetailViewModelInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModelInterface.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +161,7 @@
 		CEDF21E72DC138FF00C85581 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CEDF22222DC2B2E300C85581 /* DetailController */,
 				CEDF21E82DC1391E00C85581 /* Base */,
 				CEDF21DE2DC12E0400C85581 /* TableController */,
 			);
@@ -171,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				CEDF21EC2DC13AC500C85581 /* TitleLabel.swift */,
+				CEDF22292DC3599100C85581 /* DetailCustomView.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -254,6 +264,32 @@
 			path = FileManager;
 			sourceTree = "<group>";
 		};
+		CEDF22222DC2B2E300C85581 /* DetailController */ = {
+			isa = PBXGroup;
+			children = (
+				CEDF22262DC2B33F00C85581 /* ViewModel */,
+				CEDF22252DC2B33200C85581 /* View */,
+			);
+			path = DetailController;
+			sourceTree = "<group>";
+		};
+		CEDF22252DC2B33200C85581 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEDF22232DC2B32200C85581 /* DetailControlller.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEDF22262DC2B33F00C85581 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CEDF22272DC2B35B00C85581 /* DetailViewModel.swift */,
+				CEDF222B2DC36EB300C85581 /* DetailViewModelInterface.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -327,8 +363,10 @@
 				CEDF22112DC2223A00C85581 /* DetailAssembly.swift in Sources */,
 				CEDF22052DC20ECB00C85581 /* TableCoordinatorEvent.swift in Sources */,
 				CEDF21E62DC130B800C85581 /* TableViewCell.swift in Sources */,
+				CEDF22242DC2B32200C85581 /* DetailControlller.swift in Sources */,
 				CEDF21F02DC13B8000C85581 /* Colors.swift in Sources */,
 				CEDF22162DC2336100C85581 /* DIContainer.swift in Sources */,
+				CEDF222C2DC36EB300C85581 /* DetailViewModelInterface.swift in Sources */,
 				CEDF22012DC20E2000C85581 /* TableCoordinatorInterface.swift in Sources */,
 				CEDF220B2DC2214000C85581 /* DetailCoordinator.swift in Sources */,
 				CEDF22072DC2115000C85581 /* TableAssembly.swift in Sources */,
@@ -336,6 +374,7 @@
 				CEDF21D22DC12AA200C85581 /* RickandmortyTestApp.xcdatamodeld in Sources */,
 				CEDF21F52DC13CA400C85581 /* Titles.swift in Sources */,
 				CEDF22212DC2549700C85581 /* FileManager.swift in Sources */,
+				CEDF22282DC2B35B00C85581 /* DetailViewModel.swift in Sources */,
 				CEDF21F32DC13BCD00C85581 /* Collor+Extension.swift in Sources */,
 				CEDF220D2DC221B500C85581 /* DetailCoordinatorInterface.swift in Sources */,
 				CEDF22132DC2272400C85581 /* TableViewModelInterface.swift in Sources */,
@@ -348,6 +387,7 @@
 				CEDF21FF2DC20DB200C85581 /* TableCoordinator.swift in Sources */,
 				CEDF21F72DC1511600C85581 /* TableManager.swift in Sources */,
 				CEDF21F92DC151FA00C85581 /* Block.swift in Sources */,
+				CEDF222A2DC3599100C85581 /* DetailCustomView.swift in Sources */,
 				CEDF21EA2DC1393A00C85581 /* BaseController.swift in Sources */,
 				CEDF22182DC2372A00C85581 /* ImageService.swift in Sources */,
 				CEDF221C2DC239A500C85581 /* NetworkServiceImplementation.swift in Sources */,
